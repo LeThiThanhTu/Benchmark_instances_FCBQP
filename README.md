@@ -27,14 +27,14 @@ The collection includes instances from three problem classes.
 
 ### Maximum Dispersion Problem (MDP)
 
-- Well-known MDPLIB benchmark instances available from the [MDPLIB website](https://www.uv.es/rmarti/paper/mdp.html).
+- Well-known MDPLIB benchmark instances available from the [website](https://www.uv.es/rmarti/paper/mdp.html).
 - Instances used in *A Breakpoints Based Method for the Maximum Diversity and Dispersion Problems* by Dorit S. Hochbaum et al. (2023).
 
 ### Maximum Clique Problem (MCP)
 
 - Instances from the [DIMACS](https://iridia.ulb.ac.be/~fmascia/maximum_clique/DIMACS-benchmark) benchmark dataset.
 - Instances from the [BHOSLIB](https://iridia.ulb.ac.be/~fmascia/maximum_clique/BHOSLIB-benchmark) benchmark dataset.
-- Graph instances used in *On Solving the Densest k-Subgraph Problem on Large Graphs* by Renata Sotirov et al. (2020).
+- Instances used in *On Solving the Densest k-Subgraph Problem on Large Graphs* by Renata Sotirov et al. (2020).
 
 ### Graph Bisection Problem (GBP)
 
@@ -44,14 +44,14 @@ The collection includes instances from three problem classes.
 
 Instance files may use either of the following:
 
-- **Zero-based indexing:** node indices range from `0` to `n - 1`.
-- **One-based indexing:** node indices range from `1` to `n`.
+- **Zero-based indexing:** Variable indices range from `0` to `n - 1`.
+- **One-based indexing:** Variable indices range from `1` to `n`.
 
 ### 1. QSC Format
 
 - First line: `k`
 - Second line: `n m`
-- Each remaining line: `i j` $q_{ij}$
+- Each remaining line: `i j $q_{ij}$`
 
 where:
 
@@ -59,23 +59,23 @@ where:
 - `n` is the number of variables;
 - `m` is the number of matrix entries explicitly stored in the file;
 - `i` and `j` are variable indices; 
-- $q_{ij}$ is the coefficient associated with the pair `(i, j)` in the cost matrix $Q$.
+- `$q_{ij}$` is the coefficient associated with the pair `(i, j)` in the cost matrix $Q$.
 
-Exactly `m` entry lines follow the second line. Coefficients can be positive or negative, and can be integer- or real-valued. Diagonal entries may be included. All cost matrices are assumed to be symmetric, and entries not listed in the file are treated as zero.
+Exactly $m$ entry lines follow the second line. Coefficients can be positive or negative, and can be integer- or real-valued. Diagonal entries may be included. All cost matrices are assumed to be symmetric, and entries not listed in the file are treated as zero.
 
 ### 2. TXT Format
 
 - First line: `n k`
-- Each remaining line: `i j` $q_{ij}$
+- Each remaining line: `i j $q_{ij}$`
 
 where:
 
 - `n` is the number of variables;
 - `k` is the number of selected variables;
 - `i` and `j` are variable indices;
-- $q_{ij}$ is the coefficient associated with the pair `(i, j)` in the cost matrix $Q$.
+- `$q_{ij}$` is the coefficient associated with the pair `(i, j)` in the cost matrix $Q$.
 
-The remaining lines contain the explicitly stored matrix entries. Coefficients may be positive or negative and may be integer- or real-valued. Diagonal entries may be included. All cost matrices are assumed to be symmetric, and entries not listed in the file are treated as zero.
+The remaining lines contain the explicitly stored matrix entries. 
 
 ## Data Sources and References
 
