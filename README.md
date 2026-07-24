@@ -1,6 +1,8 @@
-# Benchmark Instances for the Fixed-Cardinality Binary Quadratic Program
+# Benchmark Instances for the Fixed Cardinality Binary Quadratic Program
 
-This repository contains instances used in the paper *A Parallel Heuristic for the Fixed-Cardinality Binary Quadratic Program* by Thi Thanh Tu Le and Thorsten Koch.
+This repository contains instances used in the paper 
+
+*A Parallel Heuristic for the Fixed-Cardinality Binary Quadratic Program* by Thi Thanh Tu Le and Thorsten Koch.
 
 The fixed-cardinality binary quadratic program (FCBQP):
 
