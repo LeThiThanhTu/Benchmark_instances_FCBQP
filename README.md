@@ -15,7 +15,9 @@ The fixed cardinality binary quadratic program (FCBQP):
 \end{aligned}
 ```
 
-where $Q = (q_{ij})_{1 \leq i,j \leq n} \in \mathbb{R}^{n \times n}$ is a symmetric cost matrix and $k$ is the required number of selected variables.
+where $Q = (q_{ij})_{1 \leq i,j \leq n} \in \mathbb{R}^{n \times n}$ is a cost matrix and $k$ is the required number of selected variables.
+
+Without loss of generality, we can assume that $Q$ is symmetric and  $k \leq n/2$.
 
 - Benchmark instances are stored in the `dataset` directory.
 - Best-known or reference objective values are stored in `best_known_results.csv`.
