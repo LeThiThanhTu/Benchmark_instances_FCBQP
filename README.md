@@ -19,7 +19,7 @@ where $Q = (q_{ij})_{1 \leq i,j \leq n} \in \mathbb{R}^{n \times n}$ is a cost m
 
 Without loss of generality, we can assume that $Q$ is symmetric and  $k \leq n/2$.
 
-- Benchmark instances are stored in the `dataset` directory.
+- Benchmark instances are stored in the folder `dataset`.
 - Best-known or reference objective values are stored in `best_known_results.csv`.
 - Links and references identifying the sources of the instances and best-known values are listed in `Related_link.pdf`.
 
@@ -29,14 +29,14 @@ The collection includes instances from three problem classes.
 
 ### Maximum Dispersion Problem (MDP)
 
-- Well-known MDPLIB benchmark instances available from the [website](https://www.uv.es/rmarti/paper/mdp.html).
+- Well-known [MDPLIB 2.0](https://www.uv.es/rmarti/paper/mdp.html) benchmark instances.
 - Instances used in the paper *A Breakpoints Based Method for the Maximum Diversity and Dispersion Problems* by Dorit S. Hochbaum et al. (2023).
 
 ### Maximum Clique Problem (MCP)
 
-- Instances from the [DIMACS](https://iridia.ulb.ac.be/~fmascia/maximum_clique/DIMACS-benchmark) benchmark dataset.
-- Instances from the [BHOSLIB](https://iridia.ulb.ac.be/~fmascia/maximum_clique/BHOSLIB-benchmark) benchmark dataset.
-- Instances used in the paper *On Solving the Densest k-Subgraph Problem on Large Graphs* by Renata Sotirov et al. (2020).
+- Instances from the [DIMACS](https://archive.dimacs.rutgers.edu/pub/challenge/graph/benchmarks/volume/Clique/) benchmark dataset.
+- Instances from the Prof. Ke Xu's Homepage about [BHOSLIB](https://rb-bench.github.io/benchmarks/hidden-opt-graph.html) benchmark dataset.
+- Instances used in the paper *On Solving the Densest k-Subgraph Problem on Large Graphs* by Renata Sotirov (2020).
 
 ### Graph Bisection Problem (GBP)
 
@@ -78,10 +78,6 @@ where:
 - `q(ij)` is the matrix coefficient $q_{ij}$ associated with the pair $(i, j)$ in the cost matrix $Q$.
 
 The remaining lines contain the explicitly stored matrix entries. 
-
-## Data Sources and References
-
-The origins of the benchmark files and reference objective values are documented in `Related_link.pdf`.
 
 ## Related Repository
 
